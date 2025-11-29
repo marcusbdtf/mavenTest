@@ -2,7 +2,7 @@
 
 import com.example.RegisterOrder.PaymentStatus;
 
-public class PaymentService {
+public class PaymentService { 
 
     private final PaymentGateway gateway;
 
@@ -16,7 +16,7 @@ public class PaymentService {
 
 <span class="fc bfc" id="L17" title="All 2 branches covered.">        if (success) {</span>
 <span class="fc" id="L18">            order.setStatus(PaymentStatus.BETALD);</span>
-<span class="fc" id="L19">        } else {</span>
+        } else {
 <span class="fc" id="L20">            order.setStatus(PaymentStatus.MISSLYCKAD);</span>
         }
 <span class="fc" id="L22">    }</span>
