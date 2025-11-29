@@ -2,7 +2,7 @@ package com.example;
 
 import com.example.RegisterOrder.PaymentStatus;
 
-public class PaymentService {
+public class PaymentService { 
 
     private final PaymentGateway gateway;
 
@@ -16,7 +16,6 @@ public class PaymentService {
 
         if (success) {
             order.setStatus(PaymentStatus.BETALD);
-
         } else {
             order.setStatus(PaymentStatus.MISSLYCKAD);
         }

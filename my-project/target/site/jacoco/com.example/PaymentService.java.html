@@ -14,12 +14,11 @@ public class PaymentService {
 
 <span class="fc" id="L15">        boolean success = gateway.processPayment(order);</span>
 
-<span class="pc bpc" id="L17" title="1 of 2 branches missed.">        if (success) {</span>
+<span class="fc bfc" id="L17" title="All 2 branches covered.">        if (success) {</span>
 <span class="fc" id="L18">            order.setStatus(PaymentStatus.BETALD);</span>
-
-<span class="fc" id="L20">        } else {</span>
-<span class="nc" id="L21">            order.setStatus(PaymentStatus.OBETALD);</span>
+<span class="fc" id="L19">        } else {</span>
+<span class="fc" id="L20">            order.setStatus(PaymentStatus.MISSLYCKAD);</span>
         }
-<span class="fc" id="L23">    }</span>
+<span class="fc" id="L22">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>
