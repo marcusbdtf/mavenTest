@@ -9,11 +9,11 @@ import static org.mockito.Mockito.when;
 import com.example.RegisterOrder.PaymentStatus;
 
 public class PaymentServiceTest {
-
+    //
     //Given: Användaren vill betala
     //When: Transaktionen går igenom
     //Then: Visas status som betald
-
+    //
     @Test
     void SuccessfulPayment() {
         Order order = new Order();

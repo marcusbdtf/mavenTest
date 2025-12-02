@@ -5,10 +5,11 @@ import static org.mockito.Mockito.*;
 import com.example.RegisterOrder.PaymentStatus;
 
 public class FailedPaymentTest {
+    //
     // Given: Användaren vill betala
     // When: Transaktionen misslyckas
     // Then: Visas status som misslyckad
-
+    //
     @Test
     void FailedPayment() {
         Order order = new Order();

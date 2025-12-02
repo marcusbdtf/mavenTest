@@ -6,12 +6,13 @@ import com.example.RegisterOrder.PaymentStatus;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+class RegisterOrderTest {
 
+//
 // Given en ny beställning
 // When beställningen registreras
 // Then status = OBETALD
-
-class RegisterOrderTest {
+//
 
     @Test
     void RegisterUnpaidOrder() {
